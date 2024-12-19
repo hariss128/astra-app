@@ -1,0 +1,4706 @@
+/* Global CSS */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #001233;
+  position: relative;
+}
+
+.getStartedContainer {
+  width: 100%;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.getStartedContainer .mainImage {
+  display: flex;
+  justify-content: center;
+}
+
+.getStartedContainer .mainImage .image {
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  max-width: 100%;
+  height: 190px;
+  width: 190px;
+  margin-top: 6rem;
+}
+
+.getStartedContainer .headingContainerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.getStartedContainer .headingcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.getStartedContainer .headingcontainer .mainHeading {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.getStartedContainer .headingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.getStartedContainer .buttonContainerMain {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.getStartedContainer .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.getStartedContainer .buttonContainer .button {
+  background-color: white;
+  border: none;
+}
+
+.getStartedContainer .myLink {
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  padding: 0rem 1rem;
+}
+
+.myLink {
+  text-decoration: none;
+}
+
+.myLinkPermission {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkEditProfile {
+  text-decoration: none;
+  width: 100%;
+  margin-right: 0.7rem;
+  padding: 0rem 0.3rem;
+}
+
+.myLinkViewProfile {
+  text-decoration: none;
+  width: 100%;
+  margin-right: 0.7rem;
+  padding: 0rem 0.3rem;
+}
+
+.myLinkUnlockProfile {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkConnectWallet {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkWalletConnected {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkWalletConnectedPostPayment {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkDocument {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkDocumentScan {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkIdTokenized {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkTokenReady {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkAstraGuide {
+  text-decoration: none;
+  width: 100%;
+}
+
+.signUpContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+}
+
+
+.signUpContainer .buttonsContainerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.signUpContainer .buttonsContainer {
+  background-color: #002855;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  width: 186px;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border-radius: 1.7rem;
+}
+
+.signUpContainer .buttonsContainer .signUpButton {
+  background-color: #023E7D;
+  height: 34px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.signUpContainer .buttonsContainer .signInButton {
+  background-color: #002855;
+  height: 34px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.signUpContainer .buttonsContainer .buttonSignUp {
+  border: none;
+  background-color: #023E7D;
+  color: white;
+  cursor: pointer;
+}
+
+.signUpContainer .buttonsContainer .buttonSignIn {
+  border: none;
+  background-color: #002855;
+  color: white;
+  cursor: pointer;
+}
+
+.signUpContainer .headingAndEmailContainer {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.signUpContainer .headingContainerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signUpContainer .headingcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signUpContainer .headingcontainer .mainHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.signUpContainer .headingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.signUpContainer .emailMainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signUpContainer .emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.signUpContainer .emailContainer .email {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.signUpContainer .emailContainer .emailInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.signUpContainer .emailContainer .emailInput .emailInputField {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.signUpContainer .emailContainer .emailButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.signUpContainer .emailContainer .emailButton .emailButton {
+  background-color: white;
+  cursor: pointer;
+}
+
+.verifyEmailContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.verifyEmailContainer .leftArrow {
+  color: #66737F;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2rem 0rem;
+}
+
+.verifyEmailContainer .headingContainerMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.verifyEmailContainer .headingcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.verifyEmailContainer .headingcontainer .mainHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.verifyEmailContainer .headingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.verifyEmailContainer .headingcontainer .subHeadingEmail {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.verifyEmailContainer .verifyBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.verifyEmailContainer .verifyBoxes .verifyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  height: 64px;
+  width: 64px;
+  border-radius: 10px;
+  background-color: #002855;
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.verifyEmailContainer .verifyButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.verifyEmailContainer .verifyButtonContainer .verifyButton {
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.verifyEmailContainer .resendButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: 1px solid #66737F;
+  background-color: #001845;
+  color: #66737F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.verifyEmailContainer .resendButtonContainer .resendButton {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.verifyEmailContainer .verifyEmailBoxesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.verifyEmailContainer .verifyEmailContainerOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+}
+
+.verifyEmailContainer .verifyEmailContainerInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+}
+
+.verifyEmailContainer .verifyEmailContainerBottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: #001233;
+  padding-bottom: 2rem;
+}
+
+.verifyEmailContainer .verifyEmailContainerBottom .buttonBack {
+  background-color: #001233;
+  color: #B8BFC6;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enterBioContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.enterBioContainer .leftArrow {
+  color: #66737F;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2rem 0rem;
+}
+
+.enterBioContainer .headingContainerMain {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.enterBioContainer .headingcontainer {  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.enterBioContainer .headingcontainer .mainHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.enterBioContainer .headingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.enterBioContainer .passwordContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.enterBioContainer .passwordContainer .passwordContainerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.enterBioContainer .passwordContainer .password {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.enterBioContainer .passwordContainer .passwordInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.enterBioContainer .passwordContainer .passwordInput .passwordInputField {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.enterBioContainer .passwordContainer .reEnterPasswordContainerInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.enterBioContainer .passwordContainer .reEnterPasswordInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.enterBioContainer .passwordContainer .reEnterPasswordInput .reEnterPasswordInputField {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.enterBioContainer .checkBoxContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.enterBioContainer .checkBoxContainer .checkBox {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid #B8BFC6;
+  background-color: #001845;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.enterBioContainer .checkBoxContainer .checkBox:checked {
+  background-color: #023E7D;
+  border-color: #023E7D;
+}
+
+/* Updated checkmark style */
+.enterBioContainer .checkBoxContainer .checkBox:checked::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.enterBioContainer .checkBoxContainer .checkBoxText {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.enterBioContainer .createAccountButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.enterBioContainer .createAccountButtonContainer .createAccountButton {
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.enterBioContainer .enterBioContainerBottom {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: #001233;
+  padding-bottom: 2rem;
+}
+
+.enterBioContainer .enterBioContainerBottom .buttonBack {
+  background-color: #001233;
+  color: #B8BFC6;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.enterBioContainer .enterBioContainerInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+  width: 100%;
+}
+
+.enterBioContainer .enterBioContainerOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  width: 100%;
+}
+
+.permissionContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  position: relative;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 400px;
+}
+
+.modalContent p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modalContent button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modalContent button:hover {
+  background-color: #0056b3;
+}
+
+.permissionContainer .mainImage {
+  display: flex;
+  justify-content: center;
+}
+
+.permissionContainer .mainImage .image {
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  max-width: 100%;
+  height: 128px;
+  width: 128px;
+  margin-top: 90px;
+  margin-bottom: 3rem;
+}
+
+.permissionContainer .permissionContainerOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 60%;
+  width: 100%;
+}
+
+.permissionContainer .headingContainerMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+.permissionContainer .headingContainerMain .mainHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.permissionContainer .headingContainerMain .subheadingcontainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.permissionContainer .headingContainerMain .subheadingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.permissionContainer .checkBoxContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.permissionContainer .checkBoxContainer .checkBox {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 1px solid #B8BFC6;
+  background-color: #001845;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.permissionContainer .checkBoxContainer .checkBox:checked {
+  background-color: #FF7411;
+  border-color: #FF7411;
+}
+
+/* Updated checkmark style */
+.permissionContainer .checkBoxContainer .checkBox:checked::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.permissionContainer .checkBoxContainer .checkBoxText {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.permissionContainer .proceedButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #212529;
+}
+
+.permissionContainer .proceedButtonContainer .buttonProceed {
+  background-color: white;
+  color: #667371;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.permissionContainer .cancelButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: #667371;
+}
+
+.permissionContainer .cancelButtonContainer .buttonCancel {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.permissionContainer .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+
+.faceRecognitionContainer {
+  width: 100%;
+  height: 100vh;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.faceRecognitionContainer .contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.faceRecognitionContainer .textContainer {
+  height: 110px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.faceRecognitionContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  height: 78px;
+  width: 320px;
+}
+
+.faceRecognitionContainer .arrowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.faceRecognitionContainer .arrowContainer .arrowtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faceRecognitionContainer .arrowContainer .arrowbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faceRecognitionContainer .arrowContainer .arrow {
+  height: 48px;
+  width: 48px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.creatingProfileContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.creatingProfileContainer .imageContainer {
+  display: flex;
+  justify-content: center;
+  mix-blend-mode: screen;
+  position: relative;
+  filter: brightness(1.1);
+}
+
+.creatingProfileContainer .circleImageMain {
+  position: relative; /* Establishes a positioning context for the logo */
+  width: 100%;
+}
+
+.creatingProfileContainer .circleImage {
+  width: 115px; /* Adjust as needed */
+  height: 115px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  z-index: -1;
+}
+
+.creatingProfileContainer .logoImageMain {
+  position: absolute; /* Allows positioning relative to the circleImageMain */
+  top: 26px;
+  left: 26px;
+  z-index: 1; /* Ensures the logo is on top */
+  pointer-events: none; /* Ensures the logo doesn't block interactions with the circle */
+}
+
+.creatingProfileContainer .logoImage {
+  width: 60px; /* Adjust size to be smaller than the circle */
+  height: 60px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.creatingProfileContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 52px;
+}
+
+.creatingProfileContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.profileCreatedContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.profileCreatedContainer .profileCreatedContainerOuter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 100%;
+}
+
+.profileCreatedContainer .profileImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.profileCreatedContainer .profileImage .profileImageIcon {
+  width: 110px;
+  height: 110px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 75px;
+}
+
+.profileCreatedContainer .profileText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.profileCreatedContainer .profileTextHeading {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+
+.profileCreatedContainer .profileTextContainerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.profileCreatedContainer .profileTextContainerfirst .profileCreatedIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.profileCreatedContainer .profileTextContainerfirst .profileCreatedIcon .icon{
+  width: 32px;
+  height: 32px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.profileCreatedContainer .profileTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.profileCreatedContainer .profileTextDetails {
+  display: flex;
+  height: auto;
+  width: 318px;
+  background-color: #023E7D;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.profileCreatedContainer .profileTextDetails .profileTextDetailsText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;  
+}
+
+.profileCreatedContainer .profileButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.profileCreatedContainer .profileButton .profileButtonText {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer {
+  width: 100%;
+  height: 140vh;
+  background-color: #001233;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.viewProfileContainer .viewProfileTopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background-color: #002855;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #023E7D;
+}
+
+.viewProfileContainer .viewProfileTopContainer .viewProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.viewProfileContainer .viewProfileTopContainer .viewProfile .viewProfileIcon {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .viewProfileTopContainer .viewProfileText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .viewProfileTopContainer .editProfile {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0rem 1rem;
+} 
+
+.viewProfileContainer .inputContainer .Inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.viewProfileContainer .inputContainer .Inner .text {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .inputContainer .Inner .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  width: 100%;
+  height: 56px;
+  background-color: #002855;
+  border-radius: 8px;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputNumber {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 100%;
+  height: 56px;
+  background-color: #002855;
+  border-radius: 8px;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputField {
+  border: none;
+  outline: none;
+  background-color: #002855;
+  border-radius: 8px;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputField::placeholder {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputNumber .inputFieldNumber {
+  border: none;
+  outline: none;
+  background-color: #002855;
+  border-radius: 8px;
+  width: 8%;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputNumber .inputFieldNumber::placeholder {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewProfileContainer .inputContainer .Inner .inputNumber .downArrow {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.viewProfileContainer .inputContainer .Inner .input .dropdown {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #DDE0E4;
+}
+
+.viewProfileContainer .continueButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0rem 1rem;
+  margin-bottom: 1rem;
+  width: 95%;
+  cursor: pointer;
+}
+
+.viewProfileContainer .continueButton .Button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.unlockProfileContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 110px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.unlockProfileContainer .profileTextContainerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.unlockProfileContainer .profileTextContainerfirst .profileCreatedIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.unlockProfileContainer .profileTextContainerfirst .profileCreatedIcon .icon{
+  width: 32px;
+  height: 32px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.unlockProfileContainer .profileTextDetails {
+  display: flex;
+  height: auto;
+  width: 318px;
+  background-color: #023E7D;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.unlockProfileContainer .profileTextDetails .profileTextDetailsText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;  
+}
+
+
+.unlockProfileContainer .unlockProfileButtonContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.unlockProfileContainer .unlockProfileButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.unlockProfileContainer .unlockProfileButtonContainer .unlockProfileButton {
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.unlockProfileContainer .learnMoreButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: #66737F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.unlockProfileContainer .learnMoreButtonContainer .learnMoreButton {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.connectWalletContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 133px;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletImageContainer .connectWalletImage {
+  width: 96px;
+  height: 96px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.connectWalletContainer .connectWalletContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70%;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletTextContainer .connectWalletTextHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletTextContainer .connectWalletTextDescription {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  width: 20rem;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  width: 100%;
+}
+
+.connectWalletContainer .connectWalletContainerMain .connectWalletButtonContainer .buttonContainer .button {
+  background-color: white;
+  border: none;
+}
+
+.walletConnectedContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 133px;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedImageContainer .walletConnectedImage {
+  width: 100px;
+  height: 100px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedTextContainer .walletConnectedTextHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedTextContainer .walletConnectedTextDescription {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletAddressContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #002855;
+  border-radius: 8px;
+  width: 100%;
+  height: 138px;
+  padding: 0rem 1rem;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletAddressContainer .ContainerMain {
+ display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletAddressContainer .Heading {
+  color: #B8BFC6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletAddressContainer .subHeading {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+}
+
+.walletConnectedContainer .walletConnectedContainerMain .walletConnectedButtonContainer .buttonContainer .button {
+  background-color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.loginContainer .buttonsContainerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.loginContainer .buttonsContainer {
+  background-color: #002855;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  height: 50px;
+  width: 186px;
+  padding: 0rem 1rem;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border-radius: 1.7rem;
+}
+
+.loginContainer .buttonsContainer .signUpButton {
+  background-color: #002855;
+  height: 34px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.loginContainer .buttonsContainer .signInButton {
+  background-color: #023E7D;
+  height: 34px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.loginContainer .buttonsContainer .buttonSignUp {
+  border: none;
+  background-color: #002855;
+  color: white;
+  cursor: pointer;
+}
+
+.loginContainer .buttonsContainer .buttonSignIn {
+  border: none;
+  background-color: #023E7D;
+  color: white;
+  cursor: pointer;
+}
+
+.loginContainer .headingAndEmailContainer {
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.loginContainer .headingContainerMain {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loginContainer .headingcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loginContainer .headingcontainer .mainHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .headingcontainer .mainSubHeading {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .emailMainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.loginContainer .emailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.loginContainer .emailContainer .Container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loginContainer .emailContainer .Container .email {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .emailContainer .Container .emailInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.loginContainer .emailContainer .emailInput .emailInputField {
+  width: 100%;
+  border: none;
+  background-color: #001845;
+  color: white;
+}
+
+.loginContainer .emailContainer .password {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .emailContainer .Container .passwordInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  padding: 0rem 1rem;
+}
+
+.loginContainer .emailContainer .passwordInput .passwordInputField {
+  width: 100%;
+  border: none;
+  background-color: #001845;
+  color: white;
+}
+
+.loginContainer .passwordInput .fa-eye {
+  color: #66737F;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.loginContainer .emailContainer .emailButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .emailContainer .emailButton .emailButton {
+  background-color: white;
+  cursor: pointer;
+}
+
+.loginContainer .emailContainer .forgotPassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #69737C;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.loginContainer .emailContainer .forgotPassword a {
+  color: #69737C;
+  text-decoration: none;
+}
+
+.walletConnectedPostPaymentContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentContainerOuter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+  width: 100%;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentImageContainer .walletConnectedPostPaymentImage {
+  width: 100px;
+  height: 100px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 133px;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentTextContainer {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentHeadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2.5rem;
+  gap: 1rem;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentHeadingContainer .walletConnectedPostPaymentHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentHeadingContainer .walletConnectedPostPaymentDescription {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.walletConnectedPostPaymentContainer .walletConnectedPostPaymentButtonContainer .walletConnectedPostPaymentButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+}
+
+.documentContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+} 
+
+.documentContainer .mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+  width: 100%;
+}
+
+.documentContainer .topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.documentContainer .topContainer .headingMain {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 151px;
+}
+
+.documentContainer .topContainer .descriptionMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.documentContainer .topContainer .descriptionMain .descriptionText {
+  color: #B8BfC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.documentContainer .middleContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.documentContainer .middleContainer .backgroundImage {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.documentContainer .middleContainer .imageContainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.documentContainer .backgroundImage .Background {
+  width: 333px;
+  height: 254px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.documentContainer .leftImage .Left {
+  width: 143px;
+  height: 246px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.documentContainer .rightImage .Right {
+  width: 110px;
+  height: 144px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 2rem;
+}
+
+.documentContainer .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.documentContainer .buttonContainer .buttonTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.documentContainer .buttonContainer .buttonBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: #001845;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.documentContainer .buttonTop .top {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.documentContainer .buttonBottom .bottom {
+  background-color: #001845;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.documentScanContainer {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 0rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.documentScanContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.documentScanContainer .buttonContainer .button {
+  background-color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.idUpdatedContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.idUpdatedContainer .profileTextContainerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.idUpdatedContainer .profileTextContainerfirst .profileCreatedIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.idUpdatedContainer .profileTextContainerfirst .profileCreatedIcon .icon{
+  width: 32px;
+  height: 32px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.idUpdatedContainer .profileTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.idUpdatedContainer .profileTextDetails {
+  display: flex;
+  height: auto;
+  width: 318px;
+  background-color: #023E7D;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.idUpdatedContainer .profileTextDetails .profileTextDetailsText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;  
+}
+
+.idUpdatedContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.idUpdatedContainer .buttonContainer .button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.idTokenizedContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.idTokenizedContainer .containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+  width: 100%;
+}
+
+.idTokenizedContainer .containerMain .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.idTokenizedContainer .container .imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.idTokenizedContainer .container .imageContainer .image {
+  width: 164px;
+  height: 164px;
+}
+
+.idTokenizedContainer .container .headingContainer {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.idTokenizedContainer .containerMain .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.idTokenizedContainer .containerMain .buttonContainer .button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tokenReadyContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.tokenReadyContainer .containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+  width: 100%;
+}
+
+.tokenReadyContainer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.tokenReadyContainer .container .imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 296px;
+  width: 100%;
+}
+
+.tokenReadyContainer .container .imageContainer .image {
+  width: 150px;
+  height: 150px;
+}
+
+.tokenReadyContainer .container .headingContainer {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.tokenReadyContainer .container .headingContainer .subHeading {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.tokenReadyContainer .containerMain .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.tokenReadyContainer .containerMain .buttonContainer .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tokenReadyContainer .containerMain .buttonContainer .top .button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tokenReadyContainer .containerMain .buttonContainer .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: #001845;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.tokenReadyContainer .containerMain .buttonContainer .bottom .button {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  background-color: #001845;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.astraGuideContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.astraGuideContainer .containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 95%;
+  width: 100%;
+}
+
+.astraGuideContainer .profileTextContainerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.astraGuideContainer .profileTextContainerfirst .profileCreatedIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.astraGuideContainer .profileTextContainerfirst .profileCreatedIcon .icon{
+  width: 32px;
+  height: 32px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.astraGuideContainer .profileTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.astraGuideContainer .profileTextDetails {
+  display: flex;
+  height: auto;
+  width: 318px;
+  background-color: #023E7D;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.astraGuideContainer .profileTextDetails .profileTextDetailsText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;  
+}
+
+.astraGuideContainer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.astraGuideContainer .container .imageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.astraGuideContainer .container .imageContainer .image {
+  width: 213px;
+  height: 219px;
+}
+
+.astraGuideContainer .InnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.astraGuideContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 8px;
+} 
+
+.astraGuideContainer .buttonContainer .button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+} 
+
+.qrInstructContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.qrInstructContainer .InnerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 90%;
+}
+
+.qrInstructContainer .Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  width: 100%;
+}
+
+.qrInstructContainer .topContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.qrInstructContainer .topContainer .topimage {
+  width: 64px;
+  height: 64px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.qrInstructContainer .bottomContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} 
+
+.qrInstructContainer .bottomContainer .bottomimage {
+  width: 250px;
+  height: 250px;
+}
+
+.qrInstructContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} 
+
+.qrInstructContainer .textContainer .text {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.homeAstraContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homeAstraContainer .InnerContainer {
+  height: 20%;
+}
+
+.homeAstraContainer .homeAstraContainerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.homeAstraContainer .topContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+}
+
+.homeAstraContainer .topContainer .topImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeAstraContainer .topContainer .topImageContainer .topimage {
+  width: 102px;
+  height: 102px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 101px;
+}
+
+.homeAstraContainer .topContainer .name {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.homeAstraContainer .container {
+  width: 203px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeAstraContainer .container .date {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.homeAstraContainer .container .passportContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1px;
+  align-items: center;
+  width: 100%;
+}
+
+.homeAstraContainer .container .passportContainer .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.homeAstraContainer .container .passportContainer .passportImage {
+  width: 24px;
+  height: 24px;
+}
+
+.homeAstraContainer .container .passportContainer .passportText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.homeAstraContainer .bottomContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 195px;
+  height: 34px;
+  background-color: #0CAF2C;
+  border-radius: 30px;
+  padding: 0rem 1rem;
+}
+
+.homeAstraContainer .bottomContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.homeAstraContainer .middleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.homeAstraContainer .middleContainer .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: #001845;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0rem 1.5rem;
+  border: 1px solid #002855;
+}
+
+.homeAstraContainer .middleContainer .buttonContainer .button {
+  color: white;
+  font-size: 16px;
+  background-color: #001845;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.homeAstraContainer .middleContainer .buttonContainer i {
+  color: white;
+}
+
+.homeAstraContainer .whiteButtonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.homeAstraContainer .whiteButtonContainer .whiteButton {
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.homeAstraContainer .whiteButtonContainer .whiteButton .button {
+  background-color: white;
+  color: #212529;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+} 
+
+.homeAstraContainer .whiteButtonContainer .blueButton {
+  background-color: #001845;
+  border-radius: 10px;
+  width: 100%;
+  height: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1.5rem;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.homeAstraContainer .whiteButtonContainer .blueButton .button {
+  background-color: #001845;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.manageDataContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.manageDataContainer .viewProfileTopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background-color: #002855;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #023E7D;
+}
+
+.manageDataContainer .viewProfileTopContainer .viewProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.manageDataContainer .viewProfileTopContainer .viewProfile .viewProfileIcon {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.manageDataContainer .viewProfileTopContainer .viewProfileText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.manageDataContainer .middleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.manageDataContainer .middleContainer .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: #001845;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  padding: 0rem 1.5rem;
+  border: 1px solid #002855;
+  margin: 0rem 1rem;
+}
+
+.manageDataContainer .middleContainer .buttonContainer .button {
+  color: white;
+  font-size: 16px;
+  background-color: #001845;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.manageDataContainer .middleContainer .buttonContainer i {
+  color: white;
+}
+
+.deleteAccountContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteAccountContainer .deleteAccountContainerInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.deleteAccountContainer .deleteAccountContainerInner .deleteAccountImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.deleteAccountContainer .deleteAccountContainerInner .deleteAccountImage .icon {
+  width: 96px;
+  height: 96px;
+  margin-top: 133px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.deleteAccountContainer .deleteAccountContainerInner .deleteAccountHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.deleteAccountContainer .deleteAccountContainerInner .deleteAccountText {
+  color: #B8BFC7;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.deleteAccountContainer .deleteAccountButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.deleteAccountContainer .deleteAccountButtonContainer .cancelAccountButton {
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.deleteAccountContainer .cancelAccountButton .cancelButton {
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteAccountContainer .deleteAccountButtonContainer .deleteAccountButton {
+  width: 100%;
+  height: 53px;
+  background-color: #DA3633; /* Given background color for delete button */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.deleteAccountContainer .deleteAccountButtonContainer .deleteAccountButton .deleteButton {
+  background-color: #DA3633;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  cursor: pointer;
+}
+
+.editProfileContainer {
+  width: 100%;
+  height: 140vh;
+  background-color: #001233;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editProfileContainer .viewProfileTopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background-color: #002855;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #023E7D;
+}
+
+.editProfileContainer .viewProfileTopContainer .viewProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.editProfileContainer .viewProfileTopContainer .viewProfile .viewProfileIcon {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.editProfileContainer .viewProfileTopContainer .viewProfileText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.editProfileContainer .viewProfileTopContainer .editProfile {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.editProfileContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0rem 1rem;
+} 
+
+.editProfileContainer .inputContainer .Inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.editProfileContainer .inputContainer .Inner .text {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.editProfileContainer .inputContainer .Inner .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  width: 100%;
+  height: 56px;
+  background-color: #002855;
+  border-radius: 8px;
+}
+
+.editProfileContainer .inputContainer .Inner .inputNumber {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem;
+  width: 100%;
+  height: 56px;
+  background-color: #002855;
+  border-radius: 8px;
+  color: white;
+}
+
+.editProfileContainer .inputContainer .Inner .inputField {
+  border: none;
+  outline: none;
+  background-color: #002855;
+  border-radius: 8px;
+  color: white;
+}
+
+.editProfileContainer .inputContainer .Inner .inputNumber .inputFieldNumber {
+  border: none;
+  outline: none;
+  background-color: #002855;
+  border-radius: 8px;
+  width: 8%;
+}
+
+.editProfileContainer .inputContainer .Inner .inputNumber .downArrow {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.editProfileContainer .inputContainer .Inner .input .dropdown {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #DDE0E4;
+}
+
+.editProfileContainer .continueButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0rem 1rem;
+  margin-bottom: 1rem;
+  width: 95%;
+  cursor: pointer;
+}
+
+.editProfileContainer .continueButton .Button {
+  color: #001233;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: none;
+  background-color: white;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.connectedPlatformsContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.connectedPlatformsContainer .viewProfileTopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background-color: #002855;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #023E7D;
+}
+
+.connectedPlatformsContainer .viewProfileTopContainer .viewProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.connectedPlatformsContainer .viewProfileTopContainer .viewProfile .viewProfileIcon {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.connectedPlatformsContainer .viewProfileTopContainer .viewProfileText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.connectedPlatformsContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+
+.connectedPlatformsContainer .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: #001845;
+  border-radius: 8px;
+  border: 1px solid #002855;
+  padding: 0rem 1rem;
+}
+
+.connectedPlatformsContainer .input .binanceContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.connectedPlatformsContainer .input .binanceContainer .binanceImage {
+  width: 36px;
+  height: 36px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.connectedPlatformsContainer .input .binanceContainer .inputField {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  background-color: #001845;
+}
+
+.connectedPlatformsContainer .input .dropdown {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.connectBinanceContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.connectBinanceContainer .connectBinanceInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.connectBinanceContainer .connectBinanceInner .pictureContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 133px;
+}
+
+.connectBinanceContainer .connectBinanceInner .pictureContainer .binanceImage {
+  width: 93px;
+  height: 109px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.connectBinanceContainer .connectBinanceInner .textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.connectBinanceContainer .connectBinanceInner .textContainer .text {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.connectBinanceContainer .connectBinanceInner .textContainer .subtext {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.connectBinanceContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.connectBinanceContainer .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 0rem 1rem;
+}
+
+.connectBinanceContainer .input .binanceContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.connectBinanceContainer .input .binanceContainer .binanceImage {
+  width: 36px;
+  height: 36px;
+  mix-blend-mode: normal;
+  filter: brightness(1.1);
+  display: block;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.connectBinanceContainer .input .binanceContainer .binanceImageFirst {
+  width: 36px;
+  height: 36px;
+  mix-blend-mode: normal;
+  filter: brightness(1.1);
+  display: block;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.connectBinanceContainer .input .binanceContainer .inputField {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.connectBinanceContainer .input .dropdown {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.partnerConnectContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+}
+
+.partnerConnectContainer .Main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.partnerConnectContainer .Main .partnerImage {
+  width: 273px;
+  height: 82px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 133px;
+}
+
+.partnerConnectContainer .Main .Inner {
+  width: 273px;
+  height: 82px;
+}
+
+.partnerConnectContainer .Main .innerShadow {
+  width: 273px;
+  height: 82px;
+  padding: 0rem 1rem;
+  display: flex;
+  gap: 9rem;
+  margin-top: 133px;
+}
+
+.partnerConnectContainer .Main .innerShadow .partnerShadow {
+  width: 93px;
+  height: 9px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.partnerConnectContainer .partnerTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 4rem;
+}
+
+.partnerConnectContainer .partnerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.partnerConnectContainer .partnerText .partnerTextTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.partnerConnectContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.partnerConnectContainer .buttonContainer .partnerButton {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.loggedInContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loggedInContainer .loggedInMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 4rem;
+}
+.loggedInContainer .loggedInImage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.loggedInContainer .loggedInImage .image {
+  width: 121px;
+  height: 128px;
+  position: relative;
+  margin-top: 133px;
+}
+
+.loggedInContainer .loggedInImage .tickContainer {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.loggedInContainer .loggedInImage .tick {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  transform: translateX(-48px);
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  margin-top: 133px;
+}
+
+.loggedInContainer .loggedInText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.loggedInContainer .loggedInText .loggedInHeading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.loggedInContainer .loggedInText .loggedInSubHeading {
+  color: #DDE0E4;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.loggedInContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.loggedInContainer .buttonContainer .loggedInButton {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.welcomeBackContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 110px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcomeBackContainer .profileTextContainerfirst {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.welcomeBackContainer .profileTextContainerfirst .profileCreatedIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.welcomeBackContainer .profileTextContainerfirst .profileCreatedIcon .icon{
+  width: 32px;
+  height: 32px;
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.welcomeBackContainer .profileTextDetails {
+  display: flex;
+  height: auto;
+  width: 318px;
+  background-color: #023E7D;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+}
+
+.welcomeBackContainer .profileTextDetails .profileTextDetailsText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;  
+}
+
+
+.welcomeBackContainer .unlockProfileButtonContainerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcomeBackContainer .unlockProfileButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.welcomeBackContainer .unlockProfileButtonContainer .unlockProfileButton {
+  background-color: white;
+  color: #212529;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralOneContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 191px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.referralOneContainer .referralOneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.referralOneContainer .referral_1image {
+  display: flex;
+  justify-content: center;
+}
+
+.referralOneContainer .referral_1image .image {
+  width: 256px;
+  height: 256px;
+  border-radius: 8px;
+}
+
+.referralOneContainer .referral_1Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralOneContainer .referral_1Text .referral_1Heading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralOneContainer .referral_1Text .referral_1SubHeading {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralOneContainer .referral_1Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralOneContainer .referral_1Button .button {
+  background-color: white;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.referralOneContainer .referral_1ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralOneContainer .referral_1ButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #001845;
+  color: #ffffff;
+}
+
+.referralOneContainer .referral_1ButtonContainer .buttonContainer .buttonLater {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralTwoContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 191px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.referralTwoContainer .referralOneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.referralTwoContainer .referral_1image {
+  display: flex;
+  justify-content: center;
+}
+
+.referralTwoContainer .referral_1image .image {
+  width: 256px;
+  height: 256px;
+  border-radius: 8px;
+}
+
+.referralTwoContainer .referral_1Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralTwoContainer .referral_1Text .referral_1Heading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralTwoContainer .referral_1Text .referral_1SubHeading {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralTwoContainer .referral_1Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralTwoContainer .referral_1Button .button {
+  background-color: white;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.referralTwoContainer .referral_1ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralTwoContainer .referral_1ButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #001845;
+  color: #ffffff;
+}
+
+.referralTwoContainer .referral_1ButtonContainer .buttonContainer .buttonLater {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralThreeContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 191px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.referralThreeContainer .referralOneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.referralThreeContainer .referral_1image {
+  display: flex;
+  justify-content: center;
+}
+
+.referralThreeContainer .referral_1image .image {
+  width: 256px;
+  height: 256px;
+  border-radius: 8px;
+  mix-blend-mode: screen;
+  filter: brightness(1);
+}
+
+.referralThreeContainer .referral_1Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralThreeContainer .referral_1Text .referral_1Heading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralThreeContainer .referral_1Text .referral_1SubHeading {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.referralThreeContainer .referral_1Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.referralThreeContainer .referral_1Button .button {
+  background-color: white;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.referralThreeContainer .referral_1ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.referralThreeContainer .referral_1ButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #001845;
+  color: #ffffff;
+}
+
+.referralThreeContainer .referral_1ButtonContainer .buttonContainer .buttonLater {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.caridContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  padding-top: 191px;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.caridContainer .referralOneContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.caridContainer .referral_1image {
+  display: flex;
+  justify-content: center;
+}
+
+.caridContainer .referral_1image .image {
+  width: 256px;
+  height: 256px;
+  border-radius: 8px;
+  mix-blend-mode: screen;
+  filter: brightness(1);
+}
+
+.caridContainer .referral_1Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.caridContainer .referral_1Text .referral_1Heading {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.2px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.caridContainer .referral_1Text .referral_1SubHeading {
+  color: #B8BFC6;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.caridContainer .referral_1Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.caridContainer .referral_1Button .button {
+  background-color: white;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+
+.caridContainer .referral_1ButtonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.caridContainer .referral_1ButtonContainer .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #001845;
+  color: #ffffff;
+}
+
+.caridContainer .referral_1ButtonContainer .buttonContainer .buttonLater {
+  background-color: #001845;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.viewDocumentContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+}
+
+.viewDocumentContainer .viewProfileTopContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background-color: #002855;
+  padding: 0rem 1rem;
+  border-bottom: 1px solid #023E7D;
+}
+
+.viewDocumentContainer .viewProfileTopContainer .viewProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.viewDocumentContainer .viewProfileTopContainer .viewProfile .viewProfileIcon {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewDocumentContainer .viewProfileTopContainer .viewProfileText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.viewDocumentContainer .containerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.viewDocumentContainer .container {
+  width: 361px;
+  height: 202px;
+  border: 1px solid #66737F;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+.viewDocumentContainer .container .imageContainer .documentImage {
+  width: 329px;
+  height: 112px;
+  width: 100%;
+}
+
+.viewDocumentContainer .container .textContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.viewDocumentContainer .container .flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 12px;
+}
+
+.viewDocumentContainer .container .flexContainer .textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.viewDocumentContainer .container .flexContainer .textContainer .outerContainer {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  width: 100%;
+}
+
+.viewDocumentContainer .container .flexContainer .textContainer .outerContainer .uploadedOn {
+  color: #66737F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.viewDocumentContainer .container .flexContainer .textContainer .outerContainer .uploadedOnText {
+  color: #66737F;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.viewDocumentContainer .container .flexContainer .textContainer .textContainerTitle {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: left;
+}
+
+.viewDocumentContainer .container .flexContainer .imageContainer .downloadIcon {
+  width: 24px;
+  height: 24px;
+  mix-blend-mode: screen;
+  filter: brightness(1);
+}
+
+.viewDocumentContainer .bottomContainer {
+  width: 361px;
+  height: 217px;
+  border-radius: 10px;
+  border: none;
+  background-color: #002855;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.viewDocumentContainer .bottomContainer .thirdContainerButton {
+  width: 100%;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  color: #001845;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.viewDocumentContainer .bottomContainer .secondContainer .secondContainerText {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  width: 273px;
+  height: 46px;
+  box-sizing: border-box;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .imageText {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  flex: 1 1 100%;
+  box-sizing: border-box;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 46px;
+  box-sizing: border-box;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .Image {
+  width: 46px;
+  height: 46px;
+  mix-blend-mode: screen;
+  filter: brightness(1);
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .iconCross {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 100%;
+} 
+
+.viewDocumentContainer .bottomContainer .firstContainer .iconCross i {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.viewDocumentContainer .bottomContainer .firstContainer .textContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.authenticityContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.authenticityContainer .circleImageMain {
+  position: relative; /* Establishes a positioning context for the logo */
+  width: 100%;
+}
+
+.authenticityContainer .circleImage {
+  width: 115px; /* Adjust as needed */
+  height: 115px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  z-index: -1;
+}
+
+.authenticityContainer .logoImageMain {
+  position: absolute; /* Allows positioning relative to the circleImageMain */
+  top: 26px;
+  left: 26px;
+  z-index: 1; /* Ensures the logo is on top */
+  pointer-events: none; /* Ensures the logo doesn't block interactions with the circle */
+}
+
+.authenticityContainer .logoImage {
+  width: 60px; /* Adjust size to be smaller than the circle */
+  height: 60px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.authenticityContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 52px;
+}
+
+.authenticityContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+.updatingProfileContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.updatingProfileContainer .circleImageMain {
+  position: relative; /* Establishes a positioning context for the logo */
+  width: 100%;
+}
+
+.updatingProfileContainer .circleImage {
+  width: 115px; /* Adjust as needed */
+  height: 115px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  z-index: -1;
+}
+
+.updatingProfileContainer .logoImageMain {
+  position: absolute; /* Allows positioning relative to the circleImageMain */
+  top: 26px;
+  left: 26px;
+  z-index: 1; /* Ensures the logo is on top */
+  pointer-events: none; /* Ensures the logo doesn't block interactions with the circle */
+}
+
+.updatingProfileContainer .logoImage {
+  width: 60px; /* Adjust size to be smaller than the circle */
+  height: 60px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.updatingProfileContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 52px;
+}
+
+.updatingProfileContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+.creatingTokenContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.creatingTokenContainer .circleImageMain {
+  position: relative; /* Establishes a positioning context for the logo */
+  width: 100%;
+}
+
+.creatingTokenContainer .circleImage {
+  width: 115px; /* Adjust as needed */
+  height: 115px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  z-index: -1;
+}
+
+.creatingTokenContainer .logoImageMain {
+  position: absolute; /* Allows positioning relative to the circleImageMain */
+  top: 26px;
+  left: 26px;
+  z-index: 1; /* Ensures the logo is on top */
+  pointer-events: none; /* Ensures the logo doesn't block interactions with the circle */
+}
+
+.creatingTokenContainer .logoImage {
+  width: 60px; /* Adjust size to be smaller than the circle */
+  height: 60px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.creatingTokenContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 52px;
+}
+
+.creatingTokenContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+
+.securingTokenContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #001233;
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.securingTokenContainer .circleImageMain {
+  position: relative; /* Establishes a positioning context for the logo */
+  width: 100%;
+}
+
+.securingTokenContainer .circleImage {
+  width: 115px; /* Adjust as needed */
+  height: 115px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+  z-index: -1;
+}
+
+.securingTokenContainer .logoImageMain {
+  position: absolute; /* Allows positioning relative to the circleImageMain */
+  top: 26px;
+  left: 26px;
+  z-index: 1; /* Ensures the logo is on top */
+  pointer-events: none; /* Ensures the logo doesn't block interactions with the circle */
+}
+
+.securingTokenContainer .logoImage {
+  width: 60px; /* Adjust size to be smaller than the circle */
+  height: 60px; /* Maintain aspect ratio */
+  mix-blend-mode: screen;
+  filter: brightness(1.1);
+}
+
+.securingTokenContainer .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 52px;
+}
+
+.securingTokenContainer .textContainer .text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  white-space: nowrap;
+}
+
+
+@media (max-width: 800px) {
+  .getStartedContainer .mainImage .image {
+    margin-top: 240px;
+  }
+  .getStartedContainer .headingcontainer .mainHeading {
+    font-size: 32px;
+  }
+  .getStartedContainer .headingcontainer .mainSubHeading {
+    font-size: 16px;
+  }
+/*  .getStartedContainer .buttonContainerMain {
+    display: flex;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+  }
+  
+  .getStartedContainer .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    width: 20rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0rem 1.5rem;
+    cursor: pointer;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+  
+  .getStartedContainer .buttonContainer .button {
+    background-color: white;
+    border: none;
+  }*/
+  
+  .signUpContainer .headingcontainer .mainHeading {
+    font-size: 24px;
+  }
+  .signUpContainer .headingcontainer .mainSubHeading {
+    font-size: 16px;
+  }
+}

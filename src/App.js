@@ -8,6 +8,7 @@ import Permission from './Pages/Home/Permission';
 import FaceRecognition from './Pages/Home/FaceRecognition.jsx';
 import CreatingProfile from './Pages/Home/CreatingProfile.jsx';
 import ProfileCreated from './Pages/Home/ProfileCreated.jsx';
+import ViewProfileFirst from './Pages/Home/ViewProfileFirst.jsx';
 import EditProfile from './Pages/Home/EditProfile.jsx';
 import UnlockProfile from './Pages/Home/UnlockProfile.jsx';
 import ConnectWallet from './Pages/Home/ConnectWallet.jsx';
@@ -61,7 +62,7 @@ function App() {
           <Route path="/facerecognition" element={<FaceRecognition />} />
           <Route path="/creatingprofile" element={<CreatingProfile />} />
           <Route path="/profilecreated" element={<ProfileCreated />} />
-          <Route path="/viewprofile" element={<ViewProfile />} />
+          <Route path="/viewprofilefirst" element={<ViewProfileFirst />} />
           <Route path="/editprofile" element={<EditProfile />} />
           <Route path="/unlockprofile" element={<UnlockProfile />} />
           <Route path="/connectwallet" element={<ConnectWallet />} />

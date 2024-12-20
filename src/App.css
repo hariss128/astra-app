@@ -203,7 +203,7 @@ body {
 .signUpContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
 }
 
 
@@ -366,7 +366,7 @@ body {
 .verifyEmailContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -541,7 +541,7 @@ body {
 .enterBioContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -757,7 +757,7 @@ body {
 .permissionContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   position: relative;
 }
@@ -1032,7 +1032,7 @@ body {
 .creatingProfileContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -1097,7 +1097,7 @@ body {
 .profileCreatedContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -1214,7 +1214,7 @@ body {
 .viewProfileContainer {
   width: 100%;
   height: 140vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1382,7 +1382,7 @@ body {
 .unlockProfileContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 110px;
   padding-bottom: 1rem;
@@ -1496,7 +1496,7 @@ body {
 .connectWalletContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -1584,7 +1584,7 @@ body {
 .walletConnectedContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -1700,7 +1700,7 @@ body {
 .loginContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -1922,7 +1922,7 @@ body {
 .walletConnectedPostPaymentContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -2014,7 +2014,7 @@ body {
 .documentContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 } 
 
@@ -2198,7 +2198,7 @@ body {
 .idUpdatedContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -2282,7 +2282,7 @@ body {
 .idTokenizedContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -2354,7 +2354,7 @@ body {
 .tokenReadyContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -2472,7 +2472,7 @@ body {
 .astraGuideContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -2581,7 +2581,7 @@ body {
 .qrInstructContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -2644,7 +2644,7 @@ body {
 .homeAstraContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -2870,7 +2870,7 @@ body {
 .manageDataContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2956,7 +2956,7 @@ body {
 .deleteAccountContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -3072,7 +3072,7 @@ body {
 .editProfileContainer {
   width: 100%;
   height: 140vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3225,7 +3225,7 @@ body {
 .connectedPlatformsContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -3321,7 +3321,7 @@ body {
 .connectBinanceContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -3444,7 +3444,7 @@ body {
 .partnerConnectContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
 }
 
@@ -3536,7 +3536,7 @@ body {
 .loggedInContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -3635,7 +3635,7 @@ body {
 .welcomeBackContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 110px;
   padding-bottom: 1rem;
@@ -3718,7 +3718,7 @@ body {
 .referralOneContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 191px;
   padding-bottom: 1rem;
@@ -3838,7 +3838,7 @@ body {
 .referralTwoContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 191px;
   padding-bottom: 1rem;
@@ -3958,7 +3958,7 @@ body {
 .referralThreeContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 191px;
   padding-bottom: 1rem;
@@ -4080,7 +4080,7 @@ body {
 .caridContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   padding-top: 191px;
   padding-bottom: 1rem;
@@ -4202,7 +4202,7 @@ body {
 .viewDocumentContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
 }
 
 .viewDocumentContainer .viewProfileTopContainer {
@@ -4439,7 +4439,7 @@ body {
 .authenticityContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -4497,7 +4497,7 @@ body {
 .updatingProfileContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -4555,7 +4555,7 @@ body {
 .creatingTokenContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
@@ -4614,7 +4614,7 @@ body {
 .securingTokenContainer {
   width: 100%;
   height: 100vh;
-  background-color: #001233;
+  background: linear-gradient(to bottom, #001d4c, #000f29);
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;

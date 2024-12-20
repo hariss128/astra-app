@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function ProfileCreated() {
+export default function ProfileCreatedFirst() {
     return (
         <div className="profileCreatedContainer">
             <div className="profileImage">
@@ -49,7 +49,11 @@ export default function ProfileCreated() {
                         </div>
                     </div>
                 </div>
-                <Link to="/viewprofile" className="myLink">
+                <Link 
+                to="/viewprofilefirst" 
+                className="myLink"
+                state={{ from: "profilecreated" }} // Correct way to pass state in React Router v6
+>
                     <div className="profileButton">
                         <button className="profileButtonText">Show My Details</button>
                     </div>

@@ -1,11 +1,21 @@
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 export default function ViewProfile () {
-    return (
+
+   const location = useLocation();
+   const fromPage = location.state?.from || "profilecreated"; // Fallback to "profilecreated" if no state
+
+   console.log("Navigated from:", fromPage); // Debugging
+
+   const backLink = fromPage === "managedata" ? "/managedata" : "/profilecreated";
+
+   
+   return (
         <div className="editProfileContainer">
             <div className="viewProfileTopContainer">
                 <div className="viewProfile">
-                    <Link to="/profilecreated" className="myLink">
+                    <Link to={backLink} className="myLink">
                         <div className="viewProfileIcon">
                             <i className="fa-solid fa-arrow-left icon"></i>
                         </div>
@@ -14,7 +24,11 @@ export default function ViewProfile () {
                         View Profile
                     </div>
                 </div>
-                <Link to="/editprofile" className="myLink">
+                <Link
+                    to="/editprofile"
+                    state={{ from: "managedata" }} // Correct way to pass state in React Router v6
+                    className="myLink"
+>
                     <div className="editProfile">
                         <strong>Edit Profile</strong>
                     </div>
@@ -116,6 +130,5 @@ export default function ViewProfile () {
                 </div>
             </Link>
         </div>
-
-    )
+    );
 }

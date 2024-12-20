@@ -9,7 +9,6 @@ export default function EditProfile() {
    console.log("Navigated from:", fromPage); // Debugging
 
    const backLink = fromPage === "managedata" ? "/managedata" : "/profilecreated";
-
     return (
         <div className="viewProfileContainer">
             <div className="viewProfileTopContainer">

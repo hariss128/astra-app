@@ -3,15 +3,29 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function SignUp() {
     const [inputValue, setInputValue] = useState(""); // State to track input value
+    const [error, setError] = useState(""); // State to track validation error
     const navigate = useNavigate(); // Hook to handle navigation
+
+    // Email validation function
+    const validateEmail = (email) => {
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    };
 
     // Handle Continue button click
     const handleContinue = () => {
-        if (inputValue.trim() !== "") { // Check if input is not empty or only whitespace
-            navigate("/verifyemail"); // Navigate to VerifyEmail page
-        } else {
-            alert("Please enter a valid input."); // Show an alert if input is empty
+        if (inputValue.trim() === "") {
+            setError("Please enter your email address");
+            return;
         }
+        
+        if (!validateEmail(inputValue)) {
+            setError("Please enter a valid email address");
+            return;
+        }
+
+        setError(""); // Clear any errors
+        navigate("/verifyemail", { state: { email: inputValue } }); // Pass email as state
     };
     
     return (
@@ -44,11 +58,34 @@ export default function SignUp() {
                     <div className="emailContainer">
                         <div className="email">Email</div>
                         <div className="emailInput">
-                            <input type="email" placeholder="Enter your email" className="emailInputField" 
-                            value={inputValue} // Bind input value to state
-                            onChange={(e) => setInputValue(e.target.value)} // Update state on input change
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email" 
+                                className={`emailInputField ${error ? 'error' : ''}`}
+                                value={inputValue}
+                                onChange={(e) => {
+                                    setInputValue(e.target.value);
+                                    setError(""); // Clear error when user types
+                                }}
+                                style={{
+                                    border: error ? '1px solid #ff0000' : 'none',
+                                    marginBottom: error ? '4px' : '0'
+                                }}
                             />
                         </div>
+                        {error && (
+                            <div style={{
+                                color: '#ff0000',
+                                fontSize: '12px',
+                                padding: '8px',
+                                backgroundColor: 'rgba(255, 0, 0, 0.1)',
+                                borderRadius: '4px',
+                                marginBottom: '12px',
+                                width: '100%'
+                            }}>
+                                {error}
+                            </div>
+                        )}
                         <div className="emailButton">
                             <button className="emailButton" onClick={handleContinue}>Continue</button>
                         </div>

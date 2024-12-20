@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Permission() {
     const [isChecked, setIsChecked] = useState(false);
-    const [showModal, setShowModal] = useState(false);
+    const navigate = useNavigate();
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
     };
 
-    const handleProceedClick = () => {
-        if (isChecked) {
-            setShowModal(true);
-        } else {
+    const handleProceedClick = async () => {
+        if (!isChecked) {
             window.alert('Please agree to the terms before proceeding.');
+            return;
         }
-    };
 
-    const handleCloseModal = () => {
-        setShowModal(false);
+        try {
+            // Request camera access using browser's native API
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+            // Stop the stream immediately since we just wanted permission
+            stream.getTracks().forEach(track => track.stop());
+            // Navigate to next route after permission granted
+            navigate('/facerecognition');
+        } catch (err) {
+            console.error('Camera access denied:', err);
+            window.alert('Camera access is required to proceed. Please allow camera access and try again.');
+        }
     };
 
     return (
@@ -72,17 +79,6 @@ export default function Permission() {
                     </Link>
                 </div>
             </div>
-            {showModal && (
-                <div className="modal">
-                    <div className="modalContent">
-                        <p>"Astra" would like to access the camera</p>
-                        <Link to="/facerecognition" className="myLinkAllow">
-                            <button onClick={handleCloseModal}>Allow</button>
-                        </Link>
-                        <button onClick={handleCloseModal}>Don't Allow</button>
-                    </div>
-                </div>
-            )}
         </div>
     );
 }

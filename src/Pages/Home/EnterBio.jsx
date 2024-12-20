@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from '../../context/UserContext';
 
 export default function EnterBio() {
+    const { updateUserData, userData } = useContext(UserContext);
     const [inputValue, setInputValue] = useState(""); // State to track input value
     const [reEnterInputValue, setReEnterInputValue] = useState(""); // State to track re-enter input value
     const [showPassword, setShowPassword] = useState(false); // State to track password visibility
@@ -20,6 +22,8 @@ export default function EnterBio() {
             return;
         }
 
+        // Update user data with password
+        updateUserData({ password: inputValue });
         setError(""); // Clear any errors
         navigate("/permission");
     };

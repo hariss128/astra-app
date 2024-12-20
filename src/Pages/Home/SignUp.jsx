@@ -13,7 +13,7 @@ export default function SignUp() {
     };
 
     // Handle Continue button click
-    const handleContinue = () => {
+    const handleContinue = async () => {
         if (inputValue.trim() === "") {
             setError("Please enter your email address");
             return;
@@ -24,8 +24,25 @@ export default function SignUp() {
             return;
         }
 
-        setError(""); // Clear any errors
-        navigate("/verifyemail", { state: { email: inputValue } }); // Pass email as state
+        try {
+            const response = await fetch('http://localhost:4000/api/users/request-verification', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email: inputValue })
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to send verification email');
+            }
+
+            setError(""); // Clear any errors
+            navigate("/verifyemail", { state: { email: inputValue } });
+        } catch (err) {
+            setError("Failed to send verification email. Please try again.");
+            console.error('Error:', err);
+        }
     };
     
     return (

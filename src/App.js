@@ -42,6 +42,7 @@ import UpdatingProfile from './Pages/Home/UpdatingProfile.jsx';
 import CreatingToken from './Pages/Home/CreatingToken.jsx';
 import SecuringToken from './Pages/Home/SecuringToken.jsx';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { UserProvider } from './context/UserContext';
 
 function App() {
   
@@ -50,8 +51,9 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-      <Routes>
+    <UserProvider>
+      <BrowserRouter>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
@@ -94,8 +96,9 @@ function App() {
           <Route path="/referraltwo" element={<ReferralTwo />} />
           <Route path="/referralthree" element={<ReferralThree />} />
           <Route path="/carid" element={<Carid />} />
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </UserProvider>
   );
 }
 

@@ -1,11 +1,20 @@
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 export default function EditProfile() {
+   const location = useLocation();
+   const fromPage = location.state?.from || "profilecreated"; // Fallback to "profilecreated" if no state
+
+   console.log("Navigated from:", fromPage); // Debugging
+
+   const backLink = fromPage === "managedata" ? "/managedata" : "/profilecreated";
+
     return (
         <div className="viewProfileContainer">
             <div className="viewProfileTopContainer">
                 <div className="viewProfile">
-                    <Link to="/profilecreated" className="myLink">
+                    <Link to={backLink} className="myLink">
                         <div className="viewProfileIcon">
                             <i className="fa-solid fa-arrow-left icon"></i>
                         </div>

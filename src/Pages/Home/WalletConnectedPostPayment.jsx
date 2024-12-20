@@ -20,7 +20,7 @@ export default function WalletConnectedPostPayment() {
                         </div>
                     </div>
                 </div>
-                <Link to="/document" className="myLinkWalletConnectedPostPayment">
+                <Link to="/homeastra" className="myLinkWalletConnectedPostPayment">
                     <div className="walletConnectedPostPaymentButtonContainer">
                         <button className="walletConnectedPostPaymentButton">
                             Complete My Profile

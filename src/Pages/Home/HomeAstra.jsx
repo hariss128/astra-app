@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HomeAstra() {
     return (
         <div className="homeAstraContainer">
@@ -20,11 +22,13 @@ export default function HomeAstra() {
                             </div>
                         </div>
                     </div>
-                    <div className="bottomContainer">
-                        <div className="text">
-                            KYC Status: Complete
+                    <Link to="/document" className="myLink">
+                        <div className="bottomContainer">
+                            <div className="text">
+                                KYC Status: Complete
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
                 <div className="middleContainer">
                     <div className="buttonContainer">
@@ -39,10 +43,12 @@ export default function HomeAstra() {
                         <button className="button" type="submit">My Documents</button>
                         <i className="fa-solid fa-chevron-right"></i>
                     </div>
-                    <div className="buttonContainer">
-                        <button className="button" type="submit">Manage My Data</button>
-                        <i className="fa-solid fa-chevron-right"></i>
-                    </div>
+                    <Link to="/managedata" className="myLinkHomeAstra">
+                        <div className="buttonContainer">
+                            <button className="button" type="submit">Manage My Data</button>
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </Link>
                 </div>
             </div>
             <div className="whiteButtonContainer">

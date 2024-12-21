@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function LoggedIn() {
     return (
         <div className="loggedInContainer">
@@ -17,11 +19,13 @@ export default function LoggedIn() {
                     </div>
                 </div>
             </div>
-            <div className="buttonContainer">
-                <button className="loggedInButton">
-                    Continue
-                </button>
-            </div>
+            <Link to="/welcomeback" className="myLinkLoggedIn">
+                <div className="buttonContainer">
+                    <button className="loggedInButton">
+                        Continue
+                    </button>
+                </div>
+            </Link>
         </div>
     )
 }

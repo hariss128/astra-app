@@ -31,10 +31,12 @@ export default function HomeAstra() {
                     </Link>
                 </div>
                 <div className="middleContainer">
-                    <div className="buttonContainer">
-                        <button className="button" type="submit">Connected Platforms</button>
-                        <i className="fa-solid fa-chevron-right"></i>
-                    </div>
+                    <Link to="/connectedplatforms" className="myLinkHomeAstra">
+                        <div className="buttonContainer">
+                            <button className="button" type="submit">Connected Platforms</button>
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </Link>
                     <div className="buttonContainer">
                         <button className="button" type="submit">View Token Details</button>
                         <i className="fa-solid fa-chevron-right"></i>
@@ -52,9 +54,11 @@ export default function HomeAstra() {
                 </div>
             </div>
             <div className="whiteButtonContainer">
-                <div className="whiteButton">
-                    <button className="button" type="submit">Connect Astra to Platforms</button>
-                </div>
+                <Link to="/connectbinance" className="myLinkHomeAstra">
+                    <div className="whiteButton">
+                        <button className="button" type="submit">Connect Astra to Platforms</button>
+                    </div>
+                </Link>
                 <div className="blueButton">
                     <button className="button" type="submit">Share My Profile</button>
                 </div>

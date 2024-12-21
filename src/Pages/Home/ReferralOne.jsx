@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ReferralOne() {
     return (
         <div className="referralOneContainer">
@@ -20,11 +22,13 @@ export default function ReferralOne() {
                         Invite Friends
                     </button>
                 </div>
-                <div className="buttonContainer">
-                    <button className="buttonLater">
-                        Maybe Later
-                    </button>
-                </div>
+                <Link to="/carid" className="myLinkReferralOne">
+                    <div className="buttonContainer">
+                        <button className="buttonLater">
+                            Maybe Later
+                        </button>
+                    </div>
+                </Link>
             </div>
         </div>
     )

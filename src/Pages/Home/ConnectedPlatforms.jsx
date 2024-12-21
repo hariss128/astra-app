@@ -1,11 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function ConnectedPlatforms() {
     return (
         <div className="connectedPlatformsContainer">
             <div className="viewProfileTopContainer">
                 <div className="viewProfile">
-                    <div className="viewProfileIcon">
-                        <i className="fa-solid fa-arrow-left icon"></i>
-                    </div>
+                    <Link to="/homeastra" className="myLink">
+                        <div className="viewProfileIcon">
+                            <i className="fa-solid fa-arrow-left icon"></i>
+                        </div>
+                    </Link>
                     <div className="viewProfileText">
                         Connected Platforms
                     </div>

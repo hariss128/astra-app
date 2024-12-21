@@ -5,7 +5,7 @@ export default function UnlockProfile() {
         <div className="unlockProfileContainer">
             <div className="profileTextContainerfirst">
                 <div className="profileCreatedIcon">
-                    <img src="/imgs/profileCreatedIcon.png" alt="Profile Created" className="icon" />    
+                    <img src="/imgs/profileCreatedGif.gif" alt="Profile Created" className="icon" />    
                 </div>
                 <div className="profileTextDetails">
                     <div className="profileTextDetailsText">

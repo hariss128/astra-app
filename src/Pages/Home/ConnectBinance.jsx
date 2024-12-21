@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function ConnectBinance() {
     return (
         <div className="connectBinanceContainer">
@@ -11,15 +13,17 @@ export default function ConnectBinance() {
                 </div>
             </div>
             <div className="inputContainer">
-                <div className="input">
-                    <div className="binanceContainer">
-                        <img src="/imgs/binanceYellow.png" alt="Binance" className="binanceImageFirst" />
-                        <div className="inputField">Binance</div>
+                <Link to="/partnerconnect" className="myLinkBinance">
+                    <div className="input">
+                        <div className="binanceContainer">
+                            <img src="/imgs/binanceYellow.png" alt="Binance" className="binanceImageFirst" />
+                            <div className="inputField">Binance</div>
+                        </div>
+                        <div className="dropdown">
+                            <i className="fa-solid fa-chevron-right"></i>
+                        </div>
                     </div>
-                    <div className="dropdown">
-                        <i className="fa-solid fa-chevron-right"></i>
-                    </div>
-                </div>      
+                </Link>
                 <div className="input">
                     <div className="binanceContainer">
                         <img src="/imgs/cImage.png" alt="Binance" className="binanceImage" />

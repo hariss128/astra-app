@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function PartnerConnect() {
     return (
         <div className="partnerConnectContainer">
@@ -16,11 +18,13 @@ export default function PartnerConnect() {
                         Use Astra to verify your identity instantly
                     </div>
                 </div>
-                <div className="buttonContainer">
-                    <button className="partnerButton">
-                        Login with Astra
-                    </button>
-                </div>
+                <Link to="/facerecognition" className="myLinkPartnerConnect">
+                    <div className="buttonContainer">
+                        <button className="partnerButton">
+                            Login with Astra
+                        </button>
+                    </div>
+                </Link>
             </div>
         </div>
     )

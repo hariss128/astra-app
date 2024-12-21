@@ -158,6 +158,11 @@ body {
   width: 100%;
 }
 
+.myLinkBinance {
+  text-decoration: none;
+  width: 100%;
+}
+
 .myLinkWalletConnectedPostPayment {
   text-decoration: none;
   width: 100%;
@@ -198,6 +203,31 @@ body {
   width: 108%;
   padding-right: 2rem;
   box-sizing: border-box;
+}
+
+.myLinkPartnerConnect {
+  text-decoration: none;
+  width: 100%;
+}
+
+.myLinkLoggedIn {
+  width: 100%;
+  text-decoration: none;
+}
+
+.myLinkWelcomeBack {
+  width: 100%;
+  text-decoration: none;
+}
+
+.myLinkReferralOne {
+  width: 100%;
+  text-decoration: none;
+}
+
+.myLinkCarid {
+  width: 100%;
+  text-decoration: none;
 }
 
 .signUpContainer {

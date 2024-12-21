@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 export default function WelcomeBack() {
     return (
         <div className="welcomeBackContainer">
             <div className="profileTextContainerfirst">
                 <div className="profileCreatedIcon">
-                    <img src="/imgs/profileCreatedIcon.png" alt="Profile Created" className="icon" />    
+                    <img src="/imgs/profileCreatedGif.gif" alt="Profile Created" className="icon" />    
                 </div>
                 <div className="profileTextDetails">
                     <div className="profileTextDetailsText">
@@ -13,11 +15,13 @@ export default function WelcomeBack() {
                 </div>
             </div>
             <div className="unlockProfileButtonContainerMain">
-                <div className="unlockProfileButtonContainer">
-                    <button className="unlockProfileButton">
-                        Explore Platforms
-                    </button>
-                </div>
+                <Link to="/referralone" className="myLinkWelcomeBack">
+                    <div className="unlockProfileButtonContainer">
+                        <button className="unlockProfileButton">
+                            Explore Platforms
+                        </button>
+                    </div>
+                </Link>
             </div>
         </div>
     )

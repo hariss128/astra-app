@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Carid() {
     return (
         <div className="caridContainer">
@@ -21,11 +23,13 @@ export default function Carid() {
                         Find Out More
                     </button>
                 </div>
-                <div className="buttonContainer">
-                    <button className="buttonLater">
-                        Maybe Later
-                    </button>
-                </div>
+                <Link to="/homeastra" className="myLinkCarid">
+                    <div className="buttonContainer">
+                        <button className="buttonLater">
+                            Maybe Later
+                        </button>
+                    </div>
+                </Link>
             </div>
         </div>
     )

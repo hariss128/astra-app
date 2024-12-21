@@ -13,7 +13,6 @@ export default function FaceRecognition() {
         const loadModels = async () => {
             try {
                 setIsLoading(true);
-                // Load models from public folder
                 await Promise.all([
                     faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
                     faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
@@ -26,11 +25,13 @@ export default function FaceRecognition() {
             }
         };
 
+        const currentWebcam = webcamRef.current;
+        
         loadModels();
 
         return () => {
-            if (webcamRef.current && webcamRef.current.srcObject) {
-                const tracks = webcamRef.current.srcObject.getTracks();
+            if (currentWebcam && currentWebcam.srcObject) {
+                const tracks = currentWebcam.srcObject.getTracks();
                 tracks.forEach(track => track.stop());
             }
         };

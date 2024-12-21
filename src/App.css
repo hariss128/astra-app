@@ -1092,6 +1092,19 @@ body {
   z-index: -1;
 }
 
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.circleImage {
+  animation: rotate 3s linear infinite;
+}
+
 .creatingProfileContainer .logoImageMain {
   position: absolute; /* Allows positioning relative to the circleImageMain */
   top: 26px;
